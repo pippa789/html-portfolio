@@ -1,0 +1,41 @@
+:root{
+    --dark: #031f03;
+    --medium: #017001;
+    --light: #7df56a;
+}
+/* I put the background in the css instead of the html so the image tag does not interfere with the grid */
+body{
+    background-image: url("/assets/images/woodland.jpg");
+    margin:0%;
+}
+
+
+#title-block{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 2fr 1fr ; 
+    grid-template-areas: 
+    "n n a"
+    "a a"
+    "c ";
+}
+
+#n{
+    background-color: var(--dark);
+    color: var(--medium);
+    width: 250px;
+    height: 200px;
+}
+
+#a{
+    background-color: var(--dark);
+    color: var(--medium);  
+}
+
+p{
+    color: var(--medium);    
+}
+
+#{
+    color: var(--medium);  
+}
