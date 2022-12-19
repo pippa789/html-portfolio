@@ -5,37 +5,43 @@
 }
 /* I put the background in the css instead of the html so the image tag does not interfere with the grid */
 body{
-    background-image: url("/assets/images/woodland.jpg");
-    margin:0%;
-}
-
-
-#title-block{
+    /* background-image: url("/assets/images/woodland.jpg");
+    margin:0%; */
     display: grid;
-    grid-template-rows: 1fr 1fr ;
-    grid-template-columns: 2fr 1fr ; 
+    grid-template-rows: 10% 50%  30%  ;
+    grid-template-columns: 20%  20% 30%  ; 
     grid-template-areas: 
-    "n n a"
-    "a a"
-    "c ";
+    
+    "img img aside"
+    "header header aside"
+    "section  section aside"
+    ;
+}
+img{
+    grid-area: img;
 }
 
-#n{
+header{
+    display: inline;
+    grid-area: header;
     background-color: var(--dark);
     color: var(--medium);
-    width: 250px;
-    height: 200px;
+    font-size: large;
+    padding: 50px;
+    
+   
 }
 
-#a{
-    background-color: var(--dark);
-    color: var(--medium);  
+section p {
+    grid-area: section;
+    background-color: pink;
+    color: var(--medium); 
+    
 }
 
-p{
-    color: var(--medium);    
-}
 
-#{
+
+aside{ 
+    grid-area: aside;
     color: var(--medium);  
 }
