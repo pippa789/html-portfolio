@@ -3,11 +3,18 @@
     --medium: #017001;
     --light: #7df56a;
 }
+*{
+    box-sizing: border-box;
+}
 /* I put the background in the css instead of the html so the image tag does not interfere with the grid */
 body{
+    margin:0;
+    padding:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1,5;
     /* background-image: url("/assets/images/woodland.jpg");
     margin:0%; */
-    display: grid;
+    /* display: grid;
     grid-template-rows: 10% 50%  30%  ;
     grid-template-columns: 20%  20% 30%  ; 
     grid-template-areas: 
@@ -15,7 +22,20 @@ body{
     "img img aside"
     "header header aside"
     "section  section aside"
-    ;
+    ; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, 
+h6 {
+    margin: 0;
+}
+
+p{
+    margin: 0;
 }
 img{
     grid-area: img;
