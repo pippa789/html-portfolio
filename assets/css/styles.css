@@ -3,15 +3,16 @@
     --medium: #017001;
     --light: #7df56a;
 }
+
+/* I put the background in the css instead of the html so the image tag does not interfere with the grid */
 *{
     box-sizing: border-box;
 }
-/* I put the background in the css instead of the html so the image tag does not interfere with the grid */
+
 body{
-    margin:0;
-    padding:0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1,5;
+    margin: 0px;
+    padding:0px;
+    background-color: rgb(17, 193, 193);
     /* background-image: url("/assets/images/woodland.jpg");
     margin:0%; */
     /* display: grid;
@@ -21,47 +22,58 @@ body{
     
     "img img aside"
     "header header aside"
-    "section  section aside"
+{    "section  section aside"
     ; */
 }
-
-h1,
-h2,
-h3,
-h4,
-h5, 
-h6 {
-    margin: 0;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin:0;
+    padding:0;
+    font-size: 30px;
+    text-decoration: none;
 }
 
-p{
-    margin: 0;
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: -700px;
+    font-size: 50px;
+    margin-left: 150px;
+    
 }
+
+h2{
+    font-size: 35px;
+    margin-left: 225px;
+    margin-top: -30px;
+}
+.hero-banner{
+    background-color: #017001;
+}
+
 img{
-    grid-area: img;
+    margin-left: 600px;
+    margin-top: -150px;
 }
 
-header{
-    display: inline;
-    grid-area: header;
-    background-color: var(--dark);
-    color: var(--medium);
-    font-size: large;
-    padding: 50px;
-    
-   
+nav > ul { 
+    display: flex;  
+    flex-direction: column;
+    background-color: #f1c083;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    width: 300px;
+    height: 800px;
+    margin:10px;
 }
 
-section p {
-    grid-area: section;
-    background-color: pink;
-    color: var(--medium); 
-    
-}
-
-
-
-aside{ 
-    grid-area: aside;
-    color: var(--medium);  
+.side-bar{
+    text-decoration: none;
+    text-emphasis: none;
 }
