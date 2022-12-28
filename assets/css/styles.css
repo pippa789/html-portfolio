@@ -12,7 +12,7 @@
 body{
     margin: 0px;
     padding:0px;
-    background-color: rgb(17, 193, 193);
+    background-color: rgb(1, 17, 17);
     /* background-image: url("/assets/images/woodland.jpg");
     margin:0%; */
     /* display: grid;
@@ -31,9 +31,11 @@ main {
     justify-content: center;
     align-items: flex-end;
     margin:0;
-    padding:0;
+    padding: 150px 150px 150px 500px;
     font-size: 30px;
     text-decoration: none;
+    background-image: url("/assets/images/hero-image.jpg");
+    background-repeat: no-repeat;
 }
 
 header {
@@ -70,7 +72,7 @@ nav > ul >li{
     text-decoration: none;
     width: 300px;
     height: 220px;
-    margin: -20px 10px;
+    margin: -50px 10px;
     padding-bottom: 70px;
     text-decoration: none;
 }
@@ -81,7 +83,7 @@ nav > ul >li{
 }
 
 #about{
-    margin-top: 750px;
+    margin: 600px 100px 50px 50px;
     font-size: 24px;
 }
 
@@ -93,5 +95,10 @@ a{
     display: flex;
     justify-content: center;
     align-items:center;
+}
+
+#contact{
+    margin-top: 200px;
+    font-size: 24px;
 }
 
