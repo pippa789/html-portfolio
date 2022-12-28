@@ -30,12 +30,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    margin:0;
-    padding: 150px 150px 150px 500px;
+    margin: 50px 50px 50px 75px;
+    padding: 150px 150px 150px 600px;
     font-size: 30px;
     text-decoration: none;
     background-image: url("/assets/images/hero-image.jpg");
     background-repeat: no-repeat;
+    border: #031f03 50px;
 }
 
 header {
@@ -43,38 +44,45 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    margin-top: -700px;
-    font-size: 50px;
+    margin-top: -760px;
+    font-size: 60px;
     margin-left: 150px;
+    text-shadow: 1px 2px #014901;
     
 }
 
 h2{
-    font-size: 35px;
-    margin-left: 225px;
-    margin-top: -30px;
+    font-size: 45px;
+    margin-left: 160px;
+    margin-top: -60px;
+    text-shadow: 1px 2px hsl(13, 95%, 23%);
 }
 .hero-banner{
     background-color: #017001;
 }
 
 img{
-    margin-left: 600px;
-    margin-top: -150px;
+    margin-left: 890px;
+    margin-top: -320px;
+    border-radius: 50%;
+    border: solid rgb(7, 46, 3) 10px;
+    opacity: 90%;
 }
 
 nav > ul >li{ 
     display: flex;  
     flex-direction: column;
-    background-color: #f1c083;
-    justify-content: space-around;
+    background-color: hsla(33, 94%, 48%, 0.878);
+    justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
     width: 300px;
-    height: 220px;
-    margin: -50px 10px;
-    padding-bottom: 70px;
+    height: 170px;
+    padding: 70px;
+    margin: -60px -100px 20px -20px ;
     text-decoration: none;
+    color: #031f03;
+    
 }
 
 .side-bar{
@@ -89,6 +97,7 @@ nav > ul >li{
 
 a{
     text-decoration: none;
+    color: #031f03;
 }
 
 #projects{
