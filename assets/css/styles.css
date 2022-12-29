@@ -61,7 +61,7 @@ h2{
     background-color: #017001;
 }
 
-img{
+#avatar{
     margin-left: 890px;
     margin-top: -320px;
     border-radius: 50%;
@@ -91,8 +91,25 @@ nav > ul >li{
 }
 
 #about{
-    margin: 600px 100px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    margin-top: 700px;
     font-size: 24px;
+    background-color: antiquewhite;
+    padding: 50px;
+    line-height: 1.5;
+    border-top: 50px;
+    border-color: #031f03;
+}
+
+#spacer{
+    width: 1200px;
+    height: 100px;
+    background-color: #031f03;
 }
 
 a{
@@ -100,14 +117,25 @@ a{
     color: #031f03;
 }
 
-#projects{
+#projects {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center;
+    width: 1000px;
+    height:400px;
+    margin: 100px;
+} 
+
+img{
+    transition: transform .2s;
 }
 
+img:hover {
+    transform: scale(1.5);
+}
 #contact{
     margin-top: 200px;
     font-size: 24px;
 }
+
 
