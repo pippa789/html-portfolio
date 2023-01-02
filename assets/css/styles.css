@@ -4,7 +4,7 @@
     --light: #7df56a;
 }
 
-/* I put the background in the css instead of the html so the image tag does not interfere with the grid */
+
 *{
     box-sizing: border-box;
 }
@@ -13,17 +13,6 @@ body{
     margin: 0px;
     padding:0px;
     background-color: rgb(1, 17, 17);
-    /* background-image: url("/assets/images/woodland.jpg");
-    margin:0%; */
-    /* display: grid;
-    grid-template-rows: 10% 50%  30%  ;
-    grid-template-columns: 20%  20% 30%  ; 
-    grid-template-areas: 
-    
-    "img img aside"
-    "header header aside"
-{    "section  section aside"
-    ; */
 }
 main {
     display: flex;
@@ -119,14 +108,23 @@ a{
 
 #projects {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items:center;
     width: 1000px;
     height:400px;
     margin: 100px;
+    font-size: 24px;
+    color: antiquewhite;
 } 
 
+#to-top{
+    color: antiquewhite;
+    font-size: 23px;
+    float:right;
+}
 img{
+    padding: 20px;
     transition: transform .2s;
 }
 
@@ -136,6 +134,7 @@ img:hover {
 #contact{
     margin-top: 200px;
     font-size: 24px;
+    color: antiquewhite;
 }
 
 
