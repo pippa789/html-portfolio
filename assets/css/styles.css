@@ -118,11 +118,8 @@ a{
     color: antiquewhite;
 } 
 
-#to-top{
-    color: antiquewhite;
-    font-size: 23px;
-    float:right;
-}
+
+
 img{
     padding: 20px;
     transition: transform .2s;
